@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Tienda Virtual - Carrito de Compras</h2>
+
+        <div class="productos">
+            <h3>Seleccione un producto:</h3>
+            <button onclick="agregarProducto('Laptop', 1200)">Laptop - $1200</button><br>
+            <button onclick="agregarProducto('Mouse', 250)">Mouse - $250</button><br>
+            <button onclick="agregarProducto('Teclado', 450)">Teclado - $450</button>
+        </div>
+
+        <div class="resultados">
+            <h3>Productos en el carrito:</h3>
+            <div id="carritoProductos"></div>
+            <button onclick="mostrarResumen()">Mostrar Resumen</button>
+        </div>
+
+        <div id="resumenCompra"></div>
+    </div>
+       
+    <script src="carrito.js"></script>
+</body>
+</html>
